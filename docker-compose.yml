@@ -1,0 +1,18 @@
+version: '2'
+services:
+    web:
+        build: .
+        command: python manage.py runserver 0.0.0.0:5000
+        volumes:
+            - .:/code
+        ports:
+            - "5000:5000"
+        links:
+            - mongo
+
+    mongo:
+        image: mongo:3.0
+        container_name: mongo
+        command: mongod --smallfiles --bind_ip 0.0.0.0
+        ports:
+            - "28000:27017"
