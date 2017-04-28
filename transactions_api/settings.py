@@ -13,7 +13,8 @@ DATABASES = {
    'default' : {
       'ENGINE' : 'django_mongodb_engine',
       'NAME' : 'transactions',
-      'PORT': 28000
+      'PORT': 27017,
+      'HOST': 'mongo',
    }
 }
 
