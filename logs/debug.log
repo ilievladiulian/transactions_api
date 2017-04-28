@@ -1,0 +1,7 @@
+transactions_transaction.find (0.00) {'$or': [{'sender': 1}, {'receiver': 1}], 'timestamp': datetime.datetime(1995, 6, 19, 0, 0), 'amount': {'$gte': 1000}}
+transaction list: []
+Not Found: /favicon.ico
+transactions_transaction.find (0.00) {'$or': [{'sender': 1}, {'receiver': 1}], 'timestamp': datetime.datetime(1995, 6, 18, 0, 0), 'amount': {'$gte': 1000}}
+transaction list: []
+transactions_transaction.find (0.01) {'$or': [{'sender': 1}, {'receiver': 1}], 'timestamp': datetime.datetime(1995, 6, 18, 0, 0), 'amount': {'$gte': 1000}}
+transaction list: []
